@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Kanit', sans-serif;
+    }
+    .clearfix {
+        clear: both;
+    }
+
+    .container {
+        width: 1260px;
+        margin: 0 auto;
+    }
+
+    .menubar {
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        box-shadow: 0 0 10px #666;
+    }
+
+    .menubar .logo {
+        float: left;
+    }
+
+    .menubar h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: normal;
+        padding: 10px;
+    }
+
+    .menubar ul.menu {
+        list-style: none;
+        float: right;
+    }
+
+    .menubar ul.menu li {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .menubar ul.menu li a {
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .menubar ul.menu li a:hover {
+        border-bottom: 2px solid black;
+        padding-bottom: 0px;
+    }
+
+    .header {
+        background: #666666 url(img/รอรูป) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 750px;
+    }
+
+    .header_area {
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        padding-top: 170px;
+    }
+
+    .header_area h1 {
+        margin: 0;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .text1{
+        font-weight: bold;
+        color:gray;
+    }
+
+    /*------ฝั่งซ้าย------*/
+    .infoleft {
+        width: 100%;
+        height: 500px;
+        background: #ffffff;
+    }
+
+    .infoleft_area {
+        color: #333;
+    }
+
+    .infoleft_text {
+        width: 600px;
+        float: left;
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+    .infoleft_text h1{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .infoleft_area h1 {
+        margin: 0px;
+    }
+
+    .infoleft_area img {
+        margin-top: 100px;
+        float: left;
+        width: 450px;
+        height: 300px;
+        border-radius: 20px;
+        border: solid black;
+        box-shadow: 0 0 10px  black;
+    }
+
+    /*------------------------*/
+
+    /*------ฝั่งขวา------*/
+    .inforight {
+        width: 100%;
+        height: 500px;
+        background: #f5f5f5
+    }
+
+    .inforight_area {
+        color: #333;
+    }
+
+    .inforight_text {
+        width: 600px;
+        float: left;
+        margin-top: 100px;
+        margin-right: 200px;
+    }
+    .inforight_text h1{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .inforight_area h1 {
+        margin: 0px
+    }
+
+    .inforight_area img {
+        margin-top: 100px;
+        float: right;
+        width: 450px;
+        height: 300px;
+        border-radius: 20px;
+        border: solid black;
+        box-shadow: 0 0 10px  black;
+    }
+
+    /*------------------------*/
+
+</style>
+
+<body>
+    <div class="menubar">
+        <div class="container">
+            <div class="logo">
+                <h1>Chiang Mai</h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">หน้าหลัก</a>
+                </li>
+                <li>
+                    <a href="#">เกี่ยวกับจังหวัด</a>
+                </li>
+                <li>
+                    <a href="#infoleft">สถานที่ท่องเที่ยว</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header_area">
+                <h1>ยินดีต้อนรับเข้าสู่เว็บไซต์แนะนำสถานที่ท่องเที่ยวของจังหวัด</h1>
+            </div>
+        </div>
+    </header>
+    <!------------------------------------------------สถานที่ 1------------------------------------------------->
+    <section class="infoleft" id="infoleft">
+        <div class="container">
+            <div class="infoleft_area">
+                <img src="img/img1.jpg" alt="">
+                <div class="infoleft_text">
+                    <h1>อุทยานแห่งชาติดอยอินทนนท์</h1> 
+                    <br>
+                    สูงสุดแดนสยามก็คือดอยอินทนนท์ด้วยความสูงจากระดับน้ำทะเล 2,565 เมตร บนตามเส้นทางการขึ้นดอยอินทนนท์ก็มีสถานที่ท่องเที่ยวให้เราได้สัมผัสกับธรรมชาติและความงามของเมืองเหนืออยู่หลายแห่ง ไม่ว่าจะเป็นพระมหาธาตุนภเมทนีดลและพระมหาธาตุนภพลภูมิสิริ, กิ่วแม่ปาน, สถานีเกษตรหลวงอินทนนท์, บ้านแม่กลางหลวง, บ้านผาหมอน, น้ำตกแม่ยะ, น้ำตกวชิรธาร ฯลฯ<br>
+                    <br><span class="text1">ที่อยู่ :</span> ที่ทำการอุทยานแห่งชาติดอยอินทนนท์ กม. ที่ 31 อำเภอจอมทอง จ.เชียงใหม่ 50160
+                    <br><span class="text1">เวลาเปิด – ปิด :</span> ทุกวัน 6.00 – 18.00 น.
+                    <br><span class="text1">ค่าเข้า :</span> ชาวไทย ผู้ใหญ่ 50 บาท, เด็ก 20 บาท ชาวต่างชาติ ผู้ใหญ่ 300 บาท, เด็ก 150 บาท
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------------------------------------------------->
+
+    <!------------------------------------------------สถานที่ 2------------------------------------------------->
+    <section class="inforight">
+        <div class="container">
+            <div class="inforight_area">
+                <div class="inforight_text">
+                    <h1>ดอยอ่างขาง</h1> 
+                    <br>
+                    ดอยอ่างขางสถานที่ท่องเที่ยวทางธรรมชาติเชียงใหม่ที่เราจะได้สัมผัสอากาศเย็นๆ พร้อมชมดอกไม้ พืชผักเมืองหนาว ทะเลหมอก ดอกพญาเสือโคร่ง และอื่นๆ อีกมากมาย ซึ่งบนดอยอ่างขางนั้นมีสถานที่ท่องเที่ยวสำคัญหลายจุดให้เราได้ไปปักหมุดเช็คอินเพียบ ทั้งสถานีเกษตรหลวงอ่างขาง, ไร่สตรอว์เบอร์รีบ้านนอแล, ไร่ชา 2000, จุดชมวิวม่อนสน, จุดชมวิวซุ่ยถัง เป็นต้น บอกเลยว่าใครที่ชื่นชอบการชมดอกนางพญาเสือโคร่งหรือซากุระเมืองไทย ดอยอ่างขางนี่แหละคือที่ที่จะทำให้เราได้ชมความงามอย่างสมใจ<br>
+                    <br><span class="text1">ที่อยู่ :</span> หมู่บ้านคุ้ม หมู่ที่ 5 ต.แม่งอน อ.ฝาง จ.เชียงใหม่
+                    <br><span class="text1">เวลาเปิด – ปิด :</span> ทุกวัน
+                    <br><span class="text1">ค่าเข้า :</span> แต่ละสถานที่มีค่าเข้าแตกต่างกัน
+                </div>
+                <img src="img/img2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------------------------------------------------->
+
+    <!------------------------------------------------สถานที่ 3------------------------------------------------->
+    <section class="infoleft" id="infoleft">
+            <div class="container">
+                <div class="infoleft_area">
+                    <img src="img/img3.jpg" alt="">
+                    <div class="infoleft_text">
+                        <h1>วัดพระธาตุดอยสุเทพ</h1> 
+                        <br>
+                        วัดพระธาตุดอยสุเทพ วัดคู่บ้านคู่เมืองของชาวเชียงใหม่ที่ต้องแวะไปสักการะให้ได้เมื่อมาเยือนเชียงใหม่ วัดพระธาตุดอยสุเทพตั้งอยู่บนยอดดอยสุเทพโดยเราจะได้นมัสการพระบรมสารีริกธาตุของพระพุทธเจ้าเพื่อสิริมงคลแก่ชีวิต ด้วยการเดินขึ้นบันไดนาคไปสู่ตัววัดทั้งหมด 306 ขั้น แต่หากใครเดินขึ้นไม่ไหวก็มีบริการรถรางไฟฟ้าให้ด้วย<br>
+                        <br><span class="text1">ที่อยู่ :</span> ถ.ศรีวิชัย ต.สุเทพ อ.เมือง จ.เชียงใหม่ 50200
+                        <br><span class="text1">เวลาเปิด – ปิด :</span> ทุกวัน 6.00 – 18.00 น.
+                        <br><span class="text1">ค่าเข้า :</span> ค่าบริการรถรางไฟฟ้าขึ้น – ลง คนละ 20 บาท
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--------------------------------------------------------------------------------------------------------->
+
+    <!------------------------------------------------สถานที่ 4------------------------------------------------->
+    <section class="inforight">
+        <div class="container">
+            <div class="inforight_area">
+                <div class="inforight_text">
+                    <h1>สวนสัตว์เชียงใหม่</h1> 
+                    <br>
+                    สวนสัตว์เชียงใหม่เป็นสวนสัตว์ขนาดใหญ่บนพื้นที่กว่า 531 ไร่ ที่มีสัตว์นานาชนิดกว่า 7,000 ตัว ให้เราได้ชมกัน ไม่ว่าจะเป็นสัตว์ยอดฮิตที่ต้องไปชมเมื่อมาถึงที่นี่อย่างหมีแพนด้า นกชนิดต่างๆ กว่า 800 ตัว นกเพนกวิน แมวนํ้า ชะนี สัตว์น้ำจืดกว่า 60 ชนิด ปลาบึกยักษ์ ฯลฯ ภายในสวนสัตว์ยังมีการแสดงความสามารถสัตว์ตลอดทั้งวันให้เราได้ชมกันอย่างเพลิดเพลินอีกด้วย<br>
+                    <br><span class="text1">ที่อยู่ :</span> 100 ถ.ห้วยแก้ว ต.สุเทพ อ.เมือง จ.เชียงใหม่
+                    <br><span class="text1">เวลาเปิด – ปิด :</span> ทุกวัน 8.00 น. – 17.00 น.
+                    <br><span class="text1">ค่าเข้า :</span> ตรวจสอบได้ที่สวนสัตว์เชียงใหม่
+                </div>
+                <img src="img/img4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------------------------------------------------->
+
+    <!------------------------------------------------สถานที่ 5------------------------------------------------->
+    <section class="infoleft" id="infoleft">
+            <div class="container">
+                <div class="infoleft_area">
+                    <img src="img/img1.jpg" alt="">
+                    <div class="infoleft_text">
+                        <h1>วัดพระธาตุดอยสุเทพ</h1> 
+                        <br>
+                        สูงสุดแดนสยามก็คือดอยอินทนนท์ด้วยความสูงจากระดับน้ำทะเล 2,565 เมตร บนตามเส้นทางการขึ้นดอยอินทนนท์ก็มีสถานที่ท่องเที่ยวให้เราได้สัมผัสกับธรรมชาติและความงามของเมืองเหนืออยู่หลายแห่ง ไม่ว่าจะเป็นพระมหาธาตุนภเมทนีดลและพระมหาธาตุนภพลภูมิสิริ, กิ่วแม่ปาน, สถานีเกษตรหลวงอินทนนท์, บ้านแม่กลางหลวง, บ้านผาหมอน, น้ำตกแม่ยะ, น้ำตกวชิรธาร ฯลฯ<br>
+                        <br><span class="text1">ที่อยู่ :</span> ที่ทำการอุทยานแห่งชาติดอยอินทนนท์ กม. ที่ 31 อำเภอจอมทอง จ.เชียงใหม่ 50160
+                        <br><span class="text1">เวลาเปิด – ปิด :</span> ทุกวัน 6.00 – 18.00 น.
+                        <br><span class="text1">ค่าเข้า :</span> ชาวไทย ผู้ใหญ่ 50 บาท, เด็ก 20 บาท ชาวต่างชาติ ผู้ใหญ่ 300 บาท, เด็ก 150 บาท
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--------------------------------------------------------------------------------------------------------->
+</body>
+</html>
